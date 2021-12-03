@@ -19,6 +19,8 @@ namespace ISBNc
             celsius = 0;
             farenheit = 0;
             kelvin = 0;
+            num = 10;
+            key = " ";
 
         }
         public bool Fahrenheit(int num, string key)
@@ -29,9 +31,13 @@ namespace ISBNc
                 celsius = (int)(num - 32) * 5 / 9;
                 farenheit = num;
                 kelvin = (int)((int)(num - 32) * 5 / 9 + 273.15);
+
+                return true;
                
             }
-            return true;
+            else
+            return false;
+            
 
         }
         public bool Celsius(int num, string key)
@@ -42,9 +48,12 @@ namespace ISBNc
                 celsius = num;
                 farenheit = (int)(num * 1.8) + 32;
                 kelvin = (int)(num + 273.15);
+                return true;
 
             }
-            return true;
+            else
+            return false;
+            
         }
         public bool Kelvin(int num, string key)
         {
@@ -54,9 +63,11 @@ namespace ISBNc
                 celsius = (int)(num - 273.15);
                 farenheit = (int)(num - 273.15) * 9 / 5 + 32;
                 kelvin = num;
+                return true;
 
             }
-            return true;
+            else
+            return false;
 
         }
     }
