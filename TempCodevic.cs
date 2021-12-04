@@ -8,11 +8,11 @@ namespace ISBNc
 {
     public class Temperature
     {
-        private int celsius = 0;
-        private int farenheit = 0;
-        private int kelvin = 0;
-        private string key = "Farenheit";
-        private int num = 10;
+        private int celsius;
+        private int farenheit;
+        private int kelvin;
+        private string key;
+        private int num;
 
         public Temperature()
         {
